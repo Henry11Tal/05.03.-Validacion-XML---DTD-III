@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE cuento SYSTEM "cuento.dtd">
+
+<!-- 
+Nombre: Henry Leonardo Talavera Velasquez 
+Curso: DAW1
+Fecha: 2/4/2025 
+Ejercicio: Ejercicio 3
+-->
+
+<cuento cod="A01" titulo="El Bosque Encantado" genero="fantasía">
+    <personajes>
+        <personaje id="p1" tipo="principal">
+            <nombre>Alicia</nombre>
+            <genero>F</genero>
+            <descripcion>Una niña curiosa que descubre un bosque mágico.</descripcion>
+            <descripcion_fisica>Alta, cabello rubio y ojos azules.</descripcion_fisica>
+        </personaje>
+        <personaje id="p2" tipo="antagonista">
+            <nombre>Bruja Malvada</nombre>
+            <genero>F</genero>
+            <descripcion>Una bruja que quiere atrapar a Alicia en el bosque.</descripcion>
+            <imagen>bruja.jpg</imagen>
+        </personaje>
+        <personaje id="p3" tipo="secundario">
+            <nombre>El Hada Azul</nombre>
+            <genero>F</genero>
+            <descripcion>Un hada que ayuda a Alicia a escapar.</descripcion>
+            <url>http://hadasmagicas.com/hadaazul</url>
+        </personaje>
+    </personajes>
+    <trama>Alicia se pierde en un bosque encantado y debe enfrentarse a la Bruja Malvada con la ayuda del Hada Azul.</trama>
+    <etiqueta nombre="aventura"/>
+    <etiqueta nombre="magia"/>
+    <precio moneda="eur">12.99</precio>
+</cuento>
