@@ -1,0 +1,36 @@
+<!DOCTYPE cuento [
+    <!ELEMENT cuento (personajes, trama, etiqueta*, precio?)>
+    
+    <!ATTLIST cuento cod CDATA #REQUIRED>
+    <!ATTLIST cuento titulo CDATA #REQUIRED>
+    <!ATTLIST cuento genero (infantil | fantasía | terror) #IMPLIED>
+        
+        <!ELEMENT personajes (personaje+)>
+    
+        <!ELEMENT personaje (nombre, genero, descripcion?, (descripcion_fisica | imagen | url)?)>
+        <!ATTLIST personaje id ID #REQUIRED>
+        <!ATTLIST personaje tipo (principal | secundario | antagonista) "principal">
+        
+            <!ELEMENT nombre (#PCDATA)>
+            <!ELEMENT genero (#PCDATA)>
+            <!ELEMENT descripcion (#PCDATA)>
+            <!ELEMENT descripcion_fisica (#PCDATA)>
+            <!ELEMENT imagen (#PCDATA)>
+            <!ELEMENT url (#PCDATA)>
+            
+        <!ELEMENT trama (#PCDATA)>
+        
+        <!ELEMENT etiqueta EMPTY>
+        <!ATTLIST etiqueta nombre CDATA #REQUIRED>
+        
+        <!ELEMENT precio (#PCDATA)>
+        <!ATTLIST precio moneda CDATA "eur">
+]>
+
+<!-- 
+    Formato del código (cod): No se puede restringir a una letra seguida de dos números.
+
+    Formato del precio: No se puede asegurar que tenga exactamente dos dígitos con dos decimales.
+    
+    Únicamente uno de los elementos descripcion_fisica, imagen o url puede estar presente en un personaje: La DTD no permite establecer esta exclusividad.
+ -->
