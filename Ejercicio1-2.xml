@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE cuento SYSTEM "cuento.dtd">
+
+<!-- 
+Nombre: Henry Leonardo Talavera Velasquez 
+Curso: DAW1
+Fecha: 2/4/2025 
+Ejercicio: Ejercicio 3
+-->
+
+<cuento cod="B02" titulo="El Susurro en la Oscuridad" genero="terror">
+    <personajes>
+        <personaje id="p1" tipo="principal">
+            <nombre>Marcos</nombre>
+            <genero>M</genero>
+            <descripcion>Un joven que se muda a una casa embrujada.</descripcion>
+            <descripcion_fisica>Alto, moreno y de mirada inquietante.</descripcion_fisica>
+        </personaje>
+        <personaje id="p2" tipo="antagonista">
+            <nombre>El Espectro</nombre>
+            <genero>N</genero>
+            <descripcion>Un ente sobrenatural que habita la casa.</descripcion>
+            <imagen>espectro.png</imagen>
+        </personaje>
+        <personaje id="p3" tipo="secundario">
+            <nombre>Señora Ramírez</nombre>
+            <genero>F</genero>
+            <descripcion>Una anciana que conoce los secretos de la casa.</descripcion>
+            <url>http://historiasdeterror.com/senoraramirez</url>
+        </personaje>
+    </personajes>
+    <trama>Marcos comienza a escuchar susurros en la oscuridad y debe descubrir la verdad detrás del espectro antes de que sea demasiado tarde.</trama>
+    <etiqueta nombre="misterio"/>
+    <etiqueta nombre="sobrenatural"/>
+    <precio moneda="eur">9.50</precio>
+</cuento>
